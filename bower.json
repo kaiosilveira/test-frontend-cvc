@@ -1,0 +1,22 @@
+{
+  "name": "test-fontend-cvc",
+  "description": "Front-end test to CVC",
+  "main": "index.js",
+  "authors": [
+    "Kaio Silveira"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "front-end",
+    "test"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
