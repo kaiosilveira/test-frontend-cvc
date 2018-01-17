@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="cvc-app">
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width;initial-scale=1">
@@ -19,7 +19,7 @@
 
    </head>
 
-   <body>
+   <body ng-controller="mainController as mainCtrl">
 
       <div class="container" style="margin: 0 30px;">
          <div class="pure-g">
@@ -173,6 +173,13 @@
              </div>
          </div>
       </div>
+
+      <!-- Angular -->
+      <script src="../bower_components/angular/angular.min.js"></script>
+      <script src="./js/app.module.js"></script>
+
+      <!-- Controllers -->
+      <script src="./js/controllers/main.controller.js"></script>
 
    </body>
 </html>
