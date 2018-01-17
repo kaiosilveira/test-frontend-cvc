@@ -1,0 +1,126 @@
+@import 'commons';
+@import 'form';
+@import 'car';
+
+%has-shadow {
+  box-shadow: 2px 2px 5px black;
+  border: 0;
+}
+
+.padding-side {
+  padding: 0 10px;
+}
+
+.search-box {
+  background-color: $yellow-primary;
+  min-height: 300px;
+}
+
+.addon-box {
+  border: 1px solid green;
+  margin-bottom: 10px;
+}
+
+.addon-content {
+  padding: 0 5px;
+  background-color: #fde052;
+}
+
+.addon-header {
+  background-color: green;
+  color: white;
+  padding: 5px 10px;
+}
+
+.search-button {
+
+  @extend %has-shadow;
+
+  width: 100%;
+  padding: 20px 50px;
+  border-radius: 5px;
+  background-color: $dark-blue-primary;
+  color: white;
+}
+
+.call-to-action-box {
+  background-color: $yellow-primary;
+  text-align: center;
+}
+
+.call-to-action-btn {
+
+  @extend %has-shadow;
+
+  padding: 20px 50px;
+  background-color: $dark-blue-secondary;
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.total-text {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.old-price-text-outer {
+  color: red;
+  text-decoration: line-through;
+}
+.old-price-text-inner {
+  color: black;
+}
+
+.price-prefix {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.buy-condictions {
+  font-weight: bold;
+}
+
+.heart-icon {
+  float: right;
+  color: red;
+}
+
+.car-box {
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+}
+
+.article {
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 35.5em) {
+  .filters-fieldset {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .filters-fieldset {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .filters-fieldset {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .filters-fieldset {
+    width: 100%;
+  }
+}

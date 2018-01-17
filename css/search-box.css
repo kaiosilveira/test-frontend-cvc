@@ -1,0 +1,28 @@
+.search-box {
+  background-color: yellow;
+  min-height: 300px;
+}
+
+.addon-box {
+  border: 1px solid green;
+  margin-bottom: 10px;
+}
+
+.addon-content {
+  padding: 0 5px;
+  background-color: #ffe4e1;
+}
+
+.addon-header {
+  background-color: green;
+  color: white;
+  padding: 5px 10px;
+}
+
+.search-button {
+  width: 100%;
+  padding: 20px 50px;
+  border-radius: 5px;
+  background-color: #003366;
+  color: white;
+}

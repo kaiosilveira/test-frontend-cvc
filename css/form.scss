@@ -1,0 +1,51 @@
+$dark-blue-primary: #003366;
+$dark-blue-secondary: #025baf;
+$yellow-primary: #ffd124;
+
+.input-fullwidth {
+   width: 100%;
+}
+
+.field {
+  padding: 10px 0;
+}
+
+::-webkit-input-placeholder {
+  color: $dark-blue-secondary;
+}
+
+:-moz-placeholder {
+    color: $dark-blue-secondary;
+}
+
+::-moz-placeholder {
+    color: $dark-blue-secondary;
+}
+
+::-ms-input-placeholder {
+    color: $dark-blue-secondary;
+}
+
+::placeholder {
+    color: $dark-blue-secondary;
+}
+
+.date-hour-input {
+  background-color: white;
+
+  input, select {
+    border: 0px solid white !important;
+    border-radius: 0 !important;
+  }
+}
+
+.filter-select-box {
+  font-size: 12px;
+  -webkit-appearance: none;
+  padding: 10px 5px !important;
+  height: 100% !important;
+}
+
+input {
+    color: $dark-blue-secondary;
+}

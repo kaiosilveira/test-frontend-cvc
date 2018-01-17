@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width;initial-scale=1">
+
+      <title>CVC Locações</title>
+
+      <!-- Font awesome -->
+      <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+
+      <!-- Pure CSS -->
+      <link rel="stylesheet" href="./css/pure/pure.min.css">
+      <link rel="stylesheet" href="./css/pure/pure-grid.min.css">
+
+      <!-- Local -->
+
+      <link rel="stylesheet" href="./css/main.css">
+
+   </head>
+
+   <body>
+
+      <div class="container" style="margin: 0 30px;">
+         <div class="pure-g">
+             <div class="pure-u-1 pure-u-md-1 pure-u-lg-1-4 pure-u-xl-1-4" style=" box-sizing: border-box; padding: 15px;">
+                <div class="search-box">
+                   <form class="pure-form padding-side">
+                      <fieldset>
+                          <div class="field">
+                            <label for="place">Local de retirada</label>
+                            <input class="input-fullwidth" type="text" placeholder="São Paulo - São Paulo / BR, Brasil">
+                          </div>
+                          <label for="same-pace-devolution" class="pure-checkbox">
+                              <input id="same-pace-devolution" type="checkbox"> <span class="color-secondary"> Devolver o carro em outro local </span>
+                          </label>
+
+                          <div class="field">
+                            <label for="place">Local de devolução</label>
+                            <input class="input-fullwidth" type="text" placeholder="Rio de Janeiro - Rio de Janeiro / BR, Brasil">
+                          </div>
+
+                          <div class="field">
+                            <label for="place">Retirada</label>
+                            <div class="date-hour-input pure-g">
+                              <input type="date" class="pure-u-2-3">
+                              <select class="pure-u-1-3 color-secondary">
+                                <option value="1">9:00</option>
+                                <option value="1">9:30</option>
+                                <option value="1">10:00</option>
+                                <option value="1">10:30</option>
+                              </select>
+                            </div>
+                          </div>
+
+                          <div class="field">
+                            <label for="place">Devolução - 8 dia(s)</label>
+                            <div class="date-hour-input pure-g">
+                              <input type="date" class="pure-u-2-3">
+                              <select class="pure-u-1-3 color-secondary">
+                                <option value="1">9:00</option>
+                                <option value="1">9:30</option>
+                                <option value="1">10:00</option>
+                                <option value="1">10:30</option>
+                              </select>
+                            </div>
+                          </div>
+
+                          <div class="addon-box">
+                             <div class="addon-header">
+                                <span>economize até 35%</span>
+                             </div>
+                             <div class="pure-g addon-content">
+                                <div class="pure-u-1-2">
+                                   <label for="remember" class="pure-checkbox">
+                                       <input id="remember" type="checkbox"> <span class="color-secondary">Incluir voo</span>
+                                   </label>
+                                </div>
+                                <div class="pure-u-1-2">
+                                   <label for="remember" class="pure-checkbox">
+                                       <input id="remember" type="checkbox"> <span class="color-secondary">Incluir hotel</span>
+                                   </label>
+                                </div>
+                             </div>
+                          </div>
+
+                          <button type="submit" class="pure-button search-button">BUSCAR</button>
+
+                      </fieldset>
+                  </form>
+                </div>
+             </div>
+             <div class="pure-u-1 pure-u-md-1 pure-u-lg-3-4 pure-u-xl-3-4" style="padding-top: 15px;">
+
+                <div class="pure-g">
+
+                   <div class="pure-u-1-1">
+                      <form class="pure-form pure-g">
+                        <fieldset class="filters-fieldset">
+
+                            <select class="color-secondary pure-u-1-3 filter-select-box">
+                              <option value="1">ITENS POR PÁGINA: 50</option>
+                              <option value="1">ITENS POR PÁGINA: 100</option>
+                              <option value="1">ITENS POR PÁGINA: 150</option>
+                            </select>
+
+                            <select class="color-secondary pure-u-1-3 filter-select-box">
+                              <option value="1">ORDENAR POR: RELEVÂNCIA</option>
+                              <option value="1">ORDENAR POR: MENOR PREÇO</option>
+                              <option value="1">ORDENAR POR: MAIOR PREÇO</option>
+                            </select>
+
+                            <select class="color-secondary pure-u-1-3 filter-select-box">
+                              <option value="1">MOEDA: REAL</option>
+                              <option value="1">MOEDA: DOLAR</option>
+                              <option value="1">MOEDA: EURO</option>
+                            </select>
+                        </fieldset>
+                      </form>
+                   </div>
+
+                   <article class="pure-u-1 pure-u-md-1 pure-u-lg-4-5 pure-u-xl-4-5 article">
+                      <div class="pure-g car-box">
+                         <div class="pure-u-1 pure-u-md-2-5 pure-u-lg-2-5 pure-u-xl-2-5">
+                            <img src="./img/gol.jpg" class="car-img">
+                         </div>
+                         <div class="pure-u-1 pure-u-md-3-5 pure-u-lg-3-5 pure-u-xl-3-5">
+                            <h2 class="car-title">carro econômico com ar <i class="fa fa-heart heart-icon"></i> </h2>
+                            <div class="pack-description">
+                              <p>código da taxa: ifmr</p>
+                              <p>chevrolet celta, ford fiesta, vw gol, fiat palio ou similar</p>
+                            </div>
+
+                            <div class="benefit-list">
+                              <p class="benefit-item">- Quilometragem livre</p>
+                              <p class="benefit-item">- Seguro total do veículo</p>
+                              <p class="benefit-item">- Seguro a terceiros </p>
+                              <p class="benefit-item">- Taxas de serviços inclusas</p>
+                            </div>
+
+                            <a href="#" class="details-toggle">Fechar detalhes x</a>
+                         </div>
+                      </div>
+                      <p class="description-box">Super inclusive promocional - Km livre, seguro total do veículo (LDW), seguro a terceiros (SLI), taxas de serviço inclusas e 1 motorista adicional</p>
+                      <div class="pure-g car-items-box color-secondary">
+                        <div class="pure-u-1-3">
+                           <p><i class="fa fa-car"></i>&ensp; 4 portas</p>
+                           <p><i class="fa fa-thermometer-half"></i>&ensp; Ar condicionado</p>
+                           <p><i class="fa fa-unsorted"></i>&ensp; Vidro elétrico</p>
+                        </div>
+                        <div class="pure-u-1-3">
+                           <p><i class="fa fa-user"></i>&ensp; 5 pessoas</p>
+                           <p><i class="fa fa-gear"></i>&ensp; Automático</p>
+                           <p><i class="fa fa-play"></i>&ensp; CD ou USB</p>
+                        </div>
+                        <div class="pure-u-1-3">
+                           <p><i class="fa fa-briefcase"></i>&ensp; 3 malas</p>
+                           <p><i class="fa fa-road"></i>&ensp; Direção hidráulica</p>
+                           <p><i class="fa fa-music"></i>&ensp; Rádio AM/FM</p>
+                        </div>
+                      </div>
+                   </article>
+                   <div class="pure-u-1 pure-u-md-1 pure-u-lg-1-5 pure-u-xl-1-5 call-to-action-box">
+                      <p class="total-text">total da locação</p>
+                      <p class="old-price-text-outer"> <span class="old-price-text-inner">de R$ 938</span> </p>
+                      <p>por <span class="price-prefix color-primary">R$</span> <span class="price color-primary">838</span> </p>
+                      <p class="buy-condictions color-primary">em até 10x</p>
+                      <button type="button" name="button" class="call-to-action-btn">alugar</button>
+                      <p style="font-size: 14px;">Taxas inclusas</p>
+                   </div>
+                </div>
+
+             </div>
+         </div>
+      </div>
+
+   </body>
+</html>
