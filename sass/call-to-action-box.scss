@@ -1,0 +1,50 @@
+@import 'shared';
+
+.call-to-action-box {
+  background-color: $yellow-primary;
+  text-align: center;
+}
+
+.call-to-action-btn {
+
+  @extend %has-shadow;
+
+  padding: 20px 50px;
+  background-color: $dark-blue-secondary;
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.total-text {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.old-price-text-outer {
+  color: red;
+  text-decoration: line-through;
+}
+.old-price-text-inner {
+  color: black;
+}
+
+.price-prefix {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.buy-condictions {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 80em) {
+  .call-to-action-box {
+    height: 100%;
+  }
+}

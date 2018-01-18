@@ -1,0 +1,33 @@
+@import 'shared';
+
+.search-box {
+  background-color: $yellow-primary;
+  min-height: 300px;
+}
+
+.addon-box {
+  border: 1px solid green;
+  margin-bottom: 10px;
+}
+
+.addon-content {
+  padding: 0 5px;
+  background-color: #fde052;
+}
+
+.addon-header {
+  background-color: green;
+  color: white;
+  padding: 5px 10px;
+}
+
+.search-button {
+
+  @extend %has-shadow;
+
+  width: 100%;
+  padding: 20px 50px;
+  border-radius: 5px;
+  background-color: $dark-blue-primary;
+  color: white;
+}

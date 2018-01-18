@@ -1,0 +1,47 @@
+.color-primary {
+  color: #003366; }
+
+.color-secondary {
+  color: #025baf; }
+
+.call-to-action-btn {
+  box-shadow: 2px 2px 5px black;
+  border: 0; }
+
+.padding-side {
+  padding: 0 10px; }
+
+.call-to-action-box {
+  background-color: #ffd124;
+  text-align: center; }
+
+.call-to-action-btn {
+  padding: 20px 50px;
+  background-color: #025baf;
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase; }
+
+.total-text {
+  font-size: 18px;
+  text-transform: uppercase; }
+
+.old-price-text-outer {
+  color: red;
+  text-decoration: line-through; }
+
+.old-price-text-inner {
+  color: black; }
+
+.price-prefix {
+  font-size: 18px;
+  font-weight: bold; }
+
+.price {
+  font-size: 26px;
+  font-weight: bold; }
+
+.buy-condictions {
+  font-weight: bold; }
+
+/*# sourceMappingURL=call-to-action-box.css.map */
