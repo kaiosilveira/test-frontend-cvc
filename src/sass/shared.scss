@@ -1,0 +1,23 @@
+$dark-blue-primary: #003366;
+$dark-blue-secondary: #025baf;
+$yellow-primary: #ffd124;
+
+.color-primary {
+  color: $dark-blue-primary;
+}
+
+.color-secondary {
+  color: $dark-blue-secondary;
+}
+
+.padding-side {
+  padding: 0 10px;
+}
+
+%has-shadow {
+  box-shadow: 2px 2px 4px black;
+  border: 0;
+}
+
+
+/*# sourceMappingURL=shared.css.map */

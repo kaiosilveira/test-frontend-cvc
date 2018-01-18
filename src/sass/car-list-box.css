@@ -1,3 +1,12 @@
+.color-primary {
+  color: #003366; }
+
+.color-secondary {
+  color: #025baf; }
+
+.padding-side {
+  padding: 0 10px; }
+
 .car-img {
   width: 300px;
   height: 180px; }
@@ -32,4 +41,16 @@
 .car-items-box {
   padding: 0 20px; }
 
-/*# sourceMappingURL=car.css.map */
+.heart-icon {
+  float: right;
+  color: red; }
+
+.car-box {
+  border-bottom: 1px solid #ddd;
+  padding: 15px; }
+
+.article {
+  border: 1px solid #ddd;
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=car-list-box.css.map */

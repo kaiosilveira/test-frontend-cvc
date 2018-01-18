@@ -1,6 +1,4 @@
-$dark-blue-primary: #003366;
-$dark-blue-secondary: #025baf;
-$yellow-primary: #ffd124;
+@import 'shared';
 
 .car-img {
   width: 300px;
@@ -12,6 +10,7 @@ $yellow-primary: #ffd124;
   color: $dark-blue-secondary;
   margin-bottom: 3px;
 }
+
 
 .pack-description {
   font-size: 12px;
@@ -44,4 +43,20 @@ $yellow-primary: #ffd124;
 
 .car-items-box {
   padding: 0 20px;
+}
+
+
+.heart-icon {
+  float: right;
+  color: red;
+}
+
+.car-box {
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+}
+
+.article {
+  border: 1px solid #ddd;
+  box-sizing: border-box;
 }

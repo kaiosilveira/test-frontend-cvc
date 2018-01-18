@@ -4,4 +4,7 @@
 .color-secondary {
   color: #025baf; }
 
-/*# sourceMappingURL=commons.css.map */
+.padding-side {
+  padding: 0 10px; }
+
+/*# sourceMappingURL=shared.css.map */
