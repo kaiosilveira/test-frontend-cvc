@@ -120,9 +120,8 @@
 
                    <section ng-controller="listController as listCtrl">
 
-                     <div ng-repeat="car in listCtrl.cars" style="margin-bottom: 10px;">
-                       <article class="pure-u-1 pure-u-md-1 pure-u-lg-4-5 pure-u-xl-4-5 article">
-
+                     <div class="pure-g" style="margin-bottom: 10px;" ng-repeat="car in listCtrl.cars">
+                       <div class="pure-u-1 pure-u-md-1 pure-u-lg-4-5 pure-u-xl-4-5 article">
                           <div class="pure-g car-box">
                              <div class="pure-u-1 pure-u-md-2-5 pure-u-lg-2-5 pure-u-xl-2-5">
                                 <img src="./img/gol.jpg" class="car-img">
@@ -139,7 +138,10 @@
                                 </div>
 
                                 <div style="margin: 18px 0">
-                                  <a href="#" ng-click="listCtrl.toggleDetails(car)" class="details-toggle">Fechar detalhes <i class="fa fa-close"></i> </a>
+                                  <a href="#" ng-show="car.showDetails" ng-click="listCtrl.toggleDetails(car)"  class="details-toggle">Fechar detalhes <i class="fa fa-close"></i>
+                                  </a>
+                                  <a href="#" ng-show="!car.showDetails" ng-click="listCtrl.toggleDetails(car)"  class="details-toggle">Ver detalhes
+                                  </a>
                                 </div>
                              </div>
                           </div>
@@ -149,8 +151,7 @@
                                <p ng-repeat="item in column"><i class="fa fa-{{item.icon}}"></i>&ensp; {{item.description}}</p>
                             </div>
                           </div>
-                       </article>
-
+                       </div>
                          <div class="pure-u-1 pure-u-md-1 pure-u-lg-1-5 pure-u-xl-1-5 call-to-action-box">
                             <p class="total-text">total da locação</p>
                             <p class="old-price-text-outer"> <span class="old-price-text-inner">de R$ 938</span> </p>
@@ -159,9 +160,7 @@
                             <button type="button" name="button" class="call-to-action-btn">alugar</button>
                             <p style="font-size: 14px;">Taxas inclusas</p>
                          </div>
-
                      </div>
-
                  </section>
              </div>
          </div>
