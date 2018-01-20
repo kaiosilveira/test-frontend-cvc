@@ -4,9 +4,31 @@ var uglify = require('gulp-uglify');
 var minify = require('gulp-minify');
 let cleanCSS = require('gulp-clean-css');
 var rename = require('gulp-rename');
+var imagemin = require('gulp-imagemin');
+var useref = require('gulp-useref');
+var gulpif = require('gulp-if');
 
 gulp.task('default', function() {
   done();
+});
+
+/* Index */
+
+gulp.task('html', function () {
+    return gulp.src('src/*.html')
+        .pipe(useref())
+        .pipe(gulpif('*.js', uglify()))
+        .pipe(gulpif('*.css', cleanCSS()))
+        .pipe(gulp.dest('dist'));
+});
+
+/* Images */
+gulp.task('img', function() {
+
+  gulp.src('src/img/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('dist/img'));
+
 });
 
 /* Javascript */
@@ -35,7 +57,7 @@ gulp.task('clean-stylesheets', function () {
 });
 
 gulp.task('stylesheets', ['clean-stylesheets'], function() {
-  gulp.src('src/css/**/*.css')
+  gulp.src('src/css/*.css')
   .pipe(cleanCSS({compatibility: 'ie9'}))
   .pipe(rename({
       suffix: '.min'
@@ -43,4 +65,9 @@ gulp.task('stylesheets', ['clean-stylesheets'], function() {
   .pipe(gulp.dest('dist/css'));
 })
 
-gulp.task('default', ['scripts', 'stylesheets']);
+gulp.task('css-libs', function() {
+  gulp.src('src/css/libs/**/*')
+  .pipe(gulp.dest('dist/css/libs'));
+});
+
+gulp.task('default', ['scripts', 'stylesheets', 'img', 'html', 'css-libs']);
